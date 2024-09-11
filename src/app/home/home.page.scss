@@ -46,6 +46,7 @@
 
 h1,h2,h3,h4,h5,h6{
   color: white;
+  text-align: center;
 }
 
 #top{
@@ -55,6 +56,7 @@ h1,h2,h3,h4,h5,h6{
   background-color:#F7DC3C;
   padding: 1px;
   border-radius: 20px;
+  border: 5px solid white;
 
 }
 
@@ -80,11 +82,12 @@ h3{
 }
 
 swiper-container{
-  width: 90%;
-  height: 50%;  
+  width: 80%;
+  height: 30%;
 }
 
 swiper-slide{
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,6 +96,31 @@ swiper-slide{
 
 img{
   border-radius: 20px;
+}
+
+ul li{
+  align-self: center;
+  color: black;
+
+}
+
+.cent{
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  background:#F7DC3C; 
+  width: 60%; 
+  margin: auto;
+  border-radius: 20px;
+  padding: 30px;
+  border: 5px solid white;
+  
+}
+
+.box{
+  width: 80%;
+  margin: auto;
+  
 }
 
 #sub{
