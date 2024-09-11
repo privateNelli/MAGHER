@@ -1,13 +1,95 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <ion-toolbar id="head">
+      <ion-title style="color: white;">
+        MAGHER
+      </ion-title>
+      <ion-button slot="end" fill="clear">Login</ion-button> <ion-button slot="end" fill="clear">Register</ion-button>
     </ion-toolbar>
   </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">register</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+  <!-- Formulario de Register-->
+  <div class="container">
+    <form>
+      <ion-list>
+        <ion-item>
+          <ion-input
+            type="name" fill="solid" label="Nombre"
+            labelPlacement="floating" helperText="Inserte nombre"
+            errorText="Nombre invalido" ngModel email
+          ></ion-input>
+          <br>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input
+            type="name2" fill="solid" label="Apellido"
+            labelPlacement="floating" helperText="Inserte apellido"
+            errorText="Apellido invalido" ngModel email
+          ></ion-input>
+          <br>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input
+            type="email" fill="solid" label="Email"
+            labelPlacement="floating" helperText="Ingrese un email"
+            errorText="Email invalido" ngModel email
+          ></ion-input>
+          <br>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input
+            type="rut" fill="solid" label="RUT"
+            labelPlacement="floating" helperText="Ingrese su RUT"
+            errorText="RUT invalido" ngModel email
+          ></ion-input>
+          <br>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input
+            type="phone" fill="solid" label="Teléfono"
+            labelPlacement="floating" helperText="Ingrese teléfono"
+          ></ion-input>
+          <br>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input
+            type="address" fill="solid" label="Dirección"
+            labelPlacement="floating" helperText="Ingrese su dirección"
+          ></ion-input>
+          <br>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input
+            type="password" fill="solid" label="Contraseña"
+            labelPlacement="floating" helperText="Ingrese una contraseña (nunca la comparta)"
+            errorText="Contraseña invalida" ngModel email
+          ></ion-input>
+          <br>
+        </ion-item>
+        
+      </ion-list>
+    </form>
+  </div>
+
+  <br>
+  
+<div class="btn-center">
+  <ion-button>Registrarse</ion-button>
+</div>
+
 </ion-content>
