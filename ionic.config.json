@@ -1,5 +1,7 @@
 {
   "name": "pepe",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

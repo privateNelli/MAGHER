@@ -10,8 +10,8 @@
 </ion-header>
 
 
-<ion-content class="fondo" [fullscreen]="true">
-  <div>
+<ion-content class="blnk"  [fullscreen]="true">
+  <div class="fondo">
   <ion-header id="center" collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
@@ -20,7 +20,26 @@
   
   <br>
   <div id="top">
-    <h1>Panadería y Pastelería MAGHER</h1>
+    <h3>Panadería y Pastelería MAGHER</h3>
   </div>
+  <br>
+  <br>
+  <div>
+    <h3 id="sub">Tradición, experiencia y calidad por mas de 30 años</h3>
+  </div>
+
+  <swiper-container
+  (slidechange)="swiperSlideChanged($event)"
+  [loop]="true"
+  [pagination]="true">
+    <swiper-slide *ngFor="let image of images">
+      <img [src]="image">
+    </swiper-slide>
+    <!-- <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide> -->
+  </swiper-container>
+  
 </div>
+
+
 </ion-content>
