@@ -3,7 +3,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <ion-toolbar id="head">
-      <ion-title style="color: white;">
+      <ion-title routerLink="/home" style="color: white;">
         MAGHER
       </ion-title>
       <ion-button slot="end" fill="clear" routerLink="/login">Login</ion-button> 
@@ -30,13 +30,17 @@
     </ion-img>
   
     <div *ngIf="usuario.nombre != '' && usuario.apellido != '' && usuario.correo != '' && usuario.rut != '' && usuario.telefono != ''
-    && usuario.contrasena != '' && usuario.contrasena2 != ''">
+    && usuario.contrasena != '' && usuario.contrasena2 != ''; else error">
       <h4 style="color: white;">Nombre: {{usuario.nombre}}</h4>
       <h4 style="color: white;">Apellido: {{usuario.apellido}}</h4>
       <h4 style="color: white;">Correo: {{usuario.correo}}</h4>
       <h4 style="color: white;">Rut: {{usuario.rut}}</h4>
       <h4 style="color: white;">Telefono: {{usuario.telefono}}</h4>
   </div>
+
+  <ng-template #error>
+    <h4 style="color: white;">Error: Por favor revise si le falto rellenar algun dato en el formulario.</h4>
+  </ng-template>
     
   </div>
   
