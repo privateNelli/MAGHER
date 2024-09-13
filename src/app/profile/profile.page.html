@@ -29,13 +29,14 @@
 
     </ion-img>
   
-  
-    <h4 style="color: white;">Nombre: {{usuario.nombre}}</h4>
-    <h4 style="color: white;">Apellido: {{usuario.apellido}}</h4>
-    <h4 style="color: white;">Correo: {{usuario.correo}}</h4>
-    <h4 style="color: white;">Rut: {{usuario.rut}}</h4>
-    <h4 style="color: white;">Telefono: {{usuario.telefono}}</h4>
-    
+    <div *ngIf="usuario.nombre != '' && usuario.apellido != '' && usuario.correo != '' && usuario.rut != '' && usuario.telefono != ''
+    && usuario.contrasena != '' && usuario.contrasena2 != ''">
+      <h4 style="color: white;">Nombre: {{usuario.nombre}}</h4>
+      <h4 style="color: white;">Apellido: {{usuario.apellido}}</h4>
+      <h4 style="color: white;">Correo: {{usuario.correo}}</h4>
+      <h4 style="color: white;">Rut: {{usuario.rut}}</h4>
+      <h4 style="color: white;">Telefono: {{usuario.telefono}}</h4>
+  </div>
     
   </div>
   
