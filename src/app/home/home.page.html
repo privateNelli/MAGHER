@@ -20,12 +20,12 @@
   </ion-header>
   
   <br>
-  <div id="top">
+  <div id="top" class="title">
     <h3>Panadería y Pastelería MAGHER</h3>
   </div>
   <br>
   <div>
-    <h3 id="sub">Tradición, experiencia y calidad por mas de 30 años</h3>
+    <h3 id="sub" class="title2">Tradición, experiencia y calidad por mas de 30 años</h3>
   </div>
 
   <swiper-container
@@ -33,13 +33,13 @@
   [loop]="true"
   [pagination]="true">
     <swiper-slide *ngFor="let image of images">
-      <img [src]="image">
+      <img class="img1" [src]="image">
     </swiper-slide>
     <!-- <swiper-slide>Slide 2</swiper-slide>
     <swiper-slide>Slide 3</swiper-slide> -->
   </swiper-container>
 
-  <h4 style="color: white;">Somos proveedores experienciados de panadería, pastelería y pedidos especiales, nuestros productos a continuación:</h4>
+  <h4 class="title3" style="color: white;">Somos proveedores experienciados de panadería, pastelería y pedidos especiales, nuestros productos a continuación:</h4>
   <div class="box">
   <ul class="cent">
     <li>Diversidad en pan</li>
