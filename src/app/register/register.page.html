@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <ion-toolbar id="head">
+      <ion-title routerLink="/home" style="color: white;">
+        MAGHER
+      </ion-title>
+
+      <ion-button slot="end" fill="clear" routerLink="/login">Login</ion-button>
+      <ion-button slot="end" fill="clear">Register</ion-button>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">register</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- Formulario de Register-->
+  <div class="container">
+    <form>
+
+      <ion-list>
+        <ion-list>
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.nombre" label="Inserte nombre:" placeholder="Nombre"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.apellido" label="Inserte apellido:" placeholder="Apellido"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.correo" label="Ingrese correo:" type="email" placeholder="Email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.rut" label="Ingrese rut:" placeholder="Rut"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.telefono" label="Ingrese telefono:" type="number" placeholder="Telefono"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.contrasena" label="Ingrese una contraseña:" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input [(ngModel)]="usuario.contrasena2" label="Nuevamente ingrese la contraseña:" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+    </form>
+  </div>
+
+  <br>
+  
+<div class="btn-center">
+  <ion-button (click)="sendToProfile()">Registrarse</ion-button>
+</div>
+
+</ion-content>
